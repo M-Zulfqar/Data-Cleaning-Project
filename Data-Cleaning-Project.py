@@ -102,9 +102,6 @@ def categorize_salary(salary):
 df['Salary_Level'] = df['Salary'].apply(categorize_salary)
 print("Dataset with Salary Level:", df[['Name', 'Salary', 'Salary_Level']].tail())
 
-plt.boxplot(df['Salary'])
-plt.title("Salary Distribution (Boxplot)")
-plt.show()
 
     
     
